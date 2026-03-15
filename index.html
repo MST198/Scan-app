@@ -806,7 +806,7 @@
         }
 
         var supplierName = state.sessionType === "LEVERANCIER" ? state.sessionLabel : state.sessionType === "ORDER" ? state.sessionLabel : "SCHADE";
-        var subject = "Retour lijst - " + supplierName + " - " + formatDateForSubject(state.startedAt);
+        var subject = "Scan app - " + supplierName + " - " + formatDateForSubject(state.startedAt);
         var body = [
           "Sessie: " + state.sessionTitle,
           "Gestart op: " + formatDateTime(state.startedAt),
